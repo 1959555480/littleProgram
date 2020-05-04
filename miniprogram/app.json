@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "明日方舟招募工具",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "tabBar":{
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text":"一",
+        "iconPath": "./images/code-cloud-callback-config.png",
+        "selectedIconPath":"./images/code-cloud-callback-config.png"
+      },
+      {
+        "pagePath":"pages/userConsole/userConsole",
+        "text":"二",
+        "iconPath": "./images/code-cloud-callback-config.png",
+        "selectedIconPath":"./images/code-cloud-callback-config.png"
+      }
+    ]
+  },
+  "style": "v2"
+}
