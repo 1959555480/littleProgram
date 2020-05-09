@@ -1,2 +1,17 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="star">
+  <view class="title">星级</view>
+  <checkbox-group class="group" bindchange="clickCheckBox">
+    <label class="flex" wx:for="{{items}}"  wx:key="{{item.value}}">
+      <checkbox value="{{item.value}}" /> {{item.name}}
+    </label>
+  </checkbox-group>
+</view
+>
+<view class="qual">
+  <label class="title">资质</label>
+  <checkbox-group class="group" bindchange="clickCheckBox">
+    <label class="flex" wx:for="{{qualifications}}"  wx:key="{{item.value}}">
+      <checkbox value="{{item.value}}" /> {{item.name}}
+    </label>
+  </checkbox-group>
+</view>
