@@ -1,12 +1,14 @@
 <view class="star">
   <view class="title">星级</view>
   <checkbox-group class="group" bindchange="clickCheckBox">
-    <label class="flex" wx:for="{{items}}"  wx:key="{{item.value}}">
-      <checkbox value="{{item.value}}" /> {{item.name}}
-    </label>
+    <view class="flex" wx:for="{{items}}"  wx:key="{{item.value}}">
+      <view class="item">
+        <checkbox value="{{item.value}}" /> {{item.name}}
+      </view>
+    </view>
   </checkbox-group>
-</view
->
+</view>
+
 <view class="qual">
   <label class="title">资质</label>
   <checkbox-group class="group" bindchange="clickCheckBox">
@@ -14,4 +16,43 @@
       <checkbox value="{{item.value}}" /> {{item.name}}
     </label>
   </checkbox-group>
+</view>
+<view >
+  <button class="btn" size="default" type="primary" plain="true">招募</button>
+</view>
+
+<view class="qual">
+  <label class="title">位置</label>
+  <checkbox-group class="group" bindchange="clickCheckBox">
+    <label class="flex" wx:for="{{positions}}"  wx:key="{{item.value}}">
+      <checkbox value="{{item.value}}" /> {{item.name}}
+    </label>
+  </checkbox-group>
+</view>
+<view >
+  <button class="btn" size="default" type="primary" plain="true">招募</button>
+</view>
+
+<view class="qual">
+  <label class="title">种类</label>
+  <checkbox-group class="group" bindchange="clickCheckBox">
+    <label class="flex" wx:for="{{types}}"  wx:key="{{item.value}}">
+      <checkbox value="{{item.value}}" /> {{item.name}}
+    </label>
+  </checkbox-group>
+</view>
+<view >
+  <button class="btn" size="default" type="primary" plain="true">招募</button>
+</view>
+
+<view class="qual">
+  <label class="title">词缀</label>
+  <checkbox-group class="group" bindchange="clickCheckBox">
+    <label class="flex" wx:for="{{terms}}"  wx:key="{{item.value}}">
+      <checkbox value="{{item.value}}" /> {{item.name}}
+    </label>
+  </checkbox-group>
+</view>
+<view >
+  <button class="btn" size="default" type="primary" plain="true">招募</button>
 </view>
